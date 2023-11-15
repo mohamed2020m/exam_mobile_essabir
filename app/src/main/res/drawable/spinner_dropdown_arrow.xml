@@ -1,0 +1,24 @@
+<!-- res/drawable/custom_loading_spinner.xml -->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="800"
+    android:fromDegrees="0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toDegrees="360">
+
+    <shape
+        android:shape="ring"
+        android:innerRadiusRatio="2.5"
+        android:thicknessRatio="0.5"
+        android:useLevel="false">
+
+        <size
+            android:width="48dp"
+            android:height="48dp" />
+
+        <gradient
+            android:type="sweep"
+            android:useLevel="false"
+            android:startColor="@android:color/darker_gray" />
+    </shape>
+</rotate>

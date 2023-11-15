@@ -4,11 +4,11 @@ plugins {
 
 
 android {
-    namespace = "me.ensa.professeur"
+    namespace = "com.essabir.exam"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "me.ensa.professeur"
+        applicationId = "com.essabir.exam"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation("com.airbnb.android:lottie:6.1.0")
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.android.volley:volley:1.2.1")

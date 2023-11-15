@@ -3,19 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/nav_professeur">
+    app:startDestination="@id/nav_employe">
 
     <fragment
-        android:id="@+id/nav_professeur"
-        android:name="me.ensa.professeur.ui.professeur.ProfesseurFragment"
-        android:label="@string/menu_prof"
-        tools:layout="@layout/fragment_professeur" />
-
-    <fragment
-        android:id="@+id/nav_specialite"
-        android:name="me.ensa.professeur.ui.specialite.SpecialiteFragment"
-        android:label="@string/menu_specialite"
-        tools:layout="@layout/fragment_specialite" />
+        android:id="@+id/nav_employe"
+        android:name="com.essabir.exam.ui.employe.EmployeFragment"
+        android:label="@string/menu_employe"
+        tools:layout="@layout/fragment_employe" />
 
 
 </navigation>

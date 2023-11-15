@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/add_image"
+        android:layout_width="158dp"
+        android:layout_height="156dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/upload" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        android:layout_marginVertical="10dp"
+        android:hint="Nom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/firstName_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        android:layout_marginVertical="10dp"
+        android:hint="Prenom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_prenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dateNaissance_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        android:layout_marginVertical="10dp"
+        android:hint="Date de Naissance">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateNaissance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:focusable="false"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:layout_marginVertical="10dp"
+        android:hint="Select Service"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/add_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            app:simpleItems="@array/specialites" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dropdown_chef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:layout_marginVertical="10dp"
+        android:hint="Select Chef"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/chef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            app:simpleItems="@array/specialites" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
